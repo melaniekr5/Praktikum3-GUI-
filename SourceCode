@@ -1,0 +1,137 @@
+Microsoft Windows [Version 10.0.17134.523]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\HP>python
+Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> myfile = open("perangkat.txt")
+>>> content = myfile.read()
+>>> myfile.close()
+>>> print(content)
+RAM
+SSD
+Hardisk
+CPU
+>>> myfile = open("prodi.txt")
+>>> content = myfile.read()
+>>> myfile.close()
+>>> print(content)
+Elektro
+Informatika
+Teknik Industri
+Sistem Informasi
+Desain Komunikasi Visual
+Rekayasa Perangkat Lunak
+>>> print("Hello\nWorld")
+Hello
+World
+>>> "Hello\nWorld".splitlines()
+['Hello', 'World']
+>>> "banana"in["banana","apple","pear"]
+True
+>>> "mango"in["banana","apple","pear"]
+False
+>>> "Hello\nNama\nNesya".splitlines()
+['Hello', 'Nama', 'Nesya']
+>>> "Nama\nNesya".splitlines()
+['Nama', 'Nesya']
+>>> a = [1,2,3]
+>>> print(a[2])
+3
+>>> print(a[0])
+1
+>>> for item in a:
+...     print(item)
+...
+1
+2
+3
+>>> b = "Hello"
+>>> for item in b:
+...     print(item)
+...
+H
+e
+l
+l
+o
+>>> pins = {"Nesyaa":1234, "MakRida":1111, "Jamall":2222}
+>>> for pin in pins:
+...     print(pin)
+...
+Nesyaa
+MakRida
+Jamall
+>>> for pin in pins.values():
+...     print(pin)
+...
+1234
+1111
+2222
+>>> blackpink = ["Lisa", "Jennie", "Rose", "Ji-soo"]
+>>> for pin in blackpink:
+...     print(pin)
+...
+Lisa
+Jennie
+Rose
+Ji-soo
+>>> a = [1,3,5,7,9]
+>>> for i in a:
+...     b = i+10
+...     print(b)
+...
+11
+13
+15
+17
+19
+>>> mylist = [3,4,6,11,2,17,90]
+>>> for i in mylist:
+...     if(i>5):
+...             print(i)
+...
+6
+11
+17
+90
+>>> temperature = [10,-20,100]
+>>> def suhu(y):
+...     f = y*9/5 + 32
+...     return f
+...
+>>>for i in temperature:
+...     print(suhu(i))
+...
+50.0
+-4.0
+212.0
+>>> myfile = open("pegawai.txt","w")
+>>> myfile.write("Bams")
+4
+>>> myfile.close()
+>>> myfile = open("pegawai.txt","w")
+>>> myfile.write("Samson")
+6
+>>> myfile.close()
+>>> myfile = open("pegawai.txt","w")
+>>> myfile.write("Samson")
+6
+>>> myfile.write("Lisa")
+4
+>>> myfile.write("Bams")
+4
+>>> myfile.close()
+>>> myfile = open("pegawai.txt","w")
+>>> myfile.write("Bams")
+4
+>>> myfile.write("\nMessi")
+6
+>>> myfile.write("\nRonaldo")
+8
+>>> myfile.close()
+>>> myfile = open("pegawai.txt","a")
+>>> myfile.write("\nJack")
+5
+>>> myfile.close()
